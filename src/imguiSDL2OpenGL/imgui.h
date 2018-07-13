@@ -18,7 +18,7 @@ class IMGUISDL2OPENGL_EXPORT imguiSDL2OpenGL::Imgui{
     ~Imgui();
     void newFrame(SDL_Window*window);
     void render(SDL_Window*window,void*context);
-    bool processEvent(SDL_Event* event);
+    bool processEvent(SDL_Event const* event);
   protected:
     friend class ImguiImpl;
     std::unique_ptr<ImguiImpl>impl;
