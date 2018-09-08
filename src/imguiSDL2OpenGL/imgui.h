@@ -12,13 +12,13 @@ namespace imguiSDL2OpenGL{
   class ImguiImpl;
 }
 
-class IMGUISDL2OPENGL_EXPORT imguiSDL2OpenGL::Imgui{
+class imguiSDL2OpenGL::Imgui{
   public:
-    Imgui(SDL_Window*window);
-    ~Imgui();
-    void newFrame(SDL_Window*window);
-    void render(SDL_Window*window,void*context);
-    bool processEvent(SDL_Event const* event);
+    IMGUISDL2OPENGL_EXPORT Imgui(SDL_Window*window);
+	IMGUISDL2OPENGL_EXPORT ~Imgui();
+	IMGUISDL2OPENGL_EXPORT void newFrame(SDL_Window*window);
+	IMGUISDL2OPENGL_EXPORT void render(SDL_Window*window,void*context);
+	IMGUISDL2OPENGL_EXPORT bool processEvent(SDL_Event const* event);
   protected:
     friend class ImguiImpl;
     std::unique_ptr<ImguiImpl>impl;
