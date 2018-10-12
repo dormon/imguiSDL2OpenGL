@@ -23,9 +23,7 @@ class ImguiImpl{
       ImGui::DestroyContext();
     }
     bool processEvent(SDL_Event const* event){
-      imguiEventHandler->processEvent(event);
-      auto const& io = ImGui::GetIO();
-      return io.WantCaptureMouse | io.WantCaptureKeyboard;
+      return imguiEventHandler->processEvent(event);
     }
     void newFrame(SDL_Window*window){
       imguiEventHandler->newFrame(window);
