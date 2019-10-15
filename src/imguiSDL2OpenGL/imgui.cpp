@@ -2,7 +2,7 @@
 #include <imguiSDL2Dormon/EventHandler.h>
 #include <imguiOpenGLDormon/Renderer.h>
 #include <imguiSDL2OpenGL/imgui.h>
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 namespace imguiSDL2OpenGL{
 
